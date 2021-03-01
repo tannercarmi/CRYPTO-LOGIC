@@ -32,11 +32,11 @@ random.shuffle(shufflelist)
 
 # GAME START
 counter = 0     # counter implemented for incorrect guesses
-guesslist = []      # list created to compare to secretword
-i = 0
-guessdisplay=''         # string created to display current guessed letters
+guesslist = []
+i = 0               # i is created to increment through the characters of secretword
+guessdisplay=''   # string created to display current guessed letters and used as sentinel
 
-# Menu for game with secretword as sentinel boolean
+# Menu for game with secretword as sentinel boolean compared to guessdisplay
 while guessdisplay != secretword :
     print("\nWelcome to CRYPTO-LOGIC!")
     print("Try to guess the scrambled word, one letter at a time!")
